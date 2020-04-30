@@ -1,6 +1,7 @@
 <template>
  <div class="event-card">
     <div class="card">
+      <img class="card__img" :src="event.previewImg" :alt="event.name">
       <div class="card-content">
         <h2 class="is-size-4 has-text-weight-bold">{{ event.name }}</h2>
         <small class="event-date">{{ event.date }}</small>
@@ -18,11 +19,23 @@ export default {
 </script>
 <style lang="scss" scoped>
   .card {
-    background-image: url('https://placekitten.com/400/400');
-    height: 200px;
+    height: 400px;
     background-position: center;
     background-size: cover;
     text-align: center;
+    position: relative;
+    transition: .3s;
+    &:hover {
+        opacity: .8;
+    }
+    &__img {
+        position: absolute;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        max-height: 400px;
+    }
   }
   .card-content {
     padding-top: 50px;
@@ -31,7 +44,7 @@ export default {
     background-color: rgba(0, 0, 0, 0.35);
     top: 0;
     padding: 10px;
-    height: 200px;
+    height: 400px;
     width: 100%;
     span {
       font-size: 18px;

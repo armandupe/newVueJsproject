@@ -1,7 +1,7 @@
 <template>
  <div class="events container">
     <h2 class="subtitle is-3">
-    Check out our upcoming events
+    Check out our past gigs photos
     </h2>
     <div class="columns is-multiline">
       <div v-for="event in events" :event="event" :key="event.id" class="column is-one-quarter">
@@ -25,31 +25,31 @@ export default {
       events: [
         {
           id: 1,
-          name: 'Charity Ball',
-          category: 'Fundraising',
-          description: 'Spend an elegant night of dinner and dancing with us as we raise money for our new rescue farm.',
-          featuredImage: 'https://placekitten.com/500/500',
-          images: [
-            'https://placekitten.com/500/500',
-            'https://placekitten.com/500/500',
-            'https://placekitten.com/500/500',
-          ],
-          location: '1234 Fancy Ave',
-          date: '12-25-2019',
-          time: '11:30'
+          previewImg: 'https://sun9-50.userapi.com/c858424/v858424182/190034/z0_Rwy5QqP8.jpg',
+          name: 'Moscow',
+          location: 'Бар "УСПЕХ"',
+          date: '07-03-2020',
         },
         {
           id: 2,
-          name: 'Rescue Center Goods Drive',
-          category: 'Adoptions',
-          description: 'Come to our donation drive to help us replenish our stock of pet food, toys, bedding, etc. We will have live bands, games, food trucks, and much more.',
-          featuredImage: 'https://placekitten.com/500/500',
-          images: [
-            'https://placekitten.com/500/500'
-          ],
-          location: '1234 Dog Alley',
-          date: '11-21-2019',
-          time: '12:00'
+          previewImg: 'https://sun9-72.userapi.com/c855128/v855128712/eb541/o7SkEuCTdQU.jpg',
+          name: 'Samara',
+          location: 'Houston Bar',
+          date: '31-08-2019',
+        },
+        {
+          id: 3,
+          previewImg: 'https://sun9-62.userapi.com/c846419/v846419278/7dbd/qyTUWvmL-jY.jpg',
+          name: 'Saratov',
+          location: 'Бар Искра',
+          date: '08-03-2018',
+        },
+        {
+          id: 4,
+          previewImg: 'https://sun9-16.userapi.com/c834202/v834202094/d5262/by93yJuiqrg.jpg',
+          name: 'Voronezh',
+          location: 'EANA',
+          date: '14-04-2018',
         }
       ]
     }  

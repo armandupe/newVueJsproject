@@ -14,6 +14,9 @@ export default {
 }
 </script>
 <style lang="scss">
+body::-webkit-scrollbar {
+  display: none;
+}
 #app {
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
