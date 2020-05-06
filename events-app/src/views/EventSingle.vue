@@ -15,8 +15,7 @@
     </section>
     <section class="event-content">
       <div class="container">
-        <p><router-link :to="'/'">Back</router-link></p>
-        <p class="is-size-4 description">{{ event.description }}</p>
+        <p class="back-link"><router-link :to="'/'">←</router-link></p>
         <div class="event-images columns is-multiline has-text-centered">
           <div v-for="image in event.images" :key="image.id" class="event-images__img-container column is-one-third">
             <img class="event-images__img" :src="image" :alt="event.name">
@@ -35,7 +34,6 @@ export default {
         {
           id: 1,
           name: 'Moscow',
-          description: 'Spend an elegant night of dinner and dancing with us as we raise money for our new rescue farm.',
           images: [
             'https://sun9-23.userapi.com/c858424/v858424182/190070/ABTytClkPg0.jpg',
             'https://sun9-50.userapi.com/c858424/v858424182/190034/z0_Rwy5QqP8.jpg',
@@ -52,7 +50,6 @@ export default {
         {
           id: 2,
           name: 'Samara',
-          description: 'Come to our donation drive to help us replenish our stock of pet food, toys, bedding, etc. We will have live bands, games, food trucks, and much more.',
           images: [
             'https://sun9-5.userapi.com/c855128/v855128712/eb401/mzT366woBjU.jpg',
             'https://sun9-54.userapi.com/c855128/v855128712/eb40b/IBTG0qVSXOk.jpg',
@@ -69,7 +66,6 @@ export default {
           {
           id: 3,
           name: 'Saratov',
-          description: 'Come to our donation drive to help us replenish our stock of pet food, toys, bedding, etc. We will have live bands, games, food trucks, and much more.',
           images: [
             'https://sun9-62.userapi.com/c846419/v846419278/7dbd/qyTUWvmL-jY.jpg',
             'https://sun9-42.userapi.com/c846216/v846216278/81bb/CsEDDwM-70Y.jpg',
@@ -86,7 +82,6 @@ export default {
           {
           id: 4,
           name: 'Voronezh',
-          description: 'Come to our donation drive to help us replenish our stock of pet food, toys, bedding, etc. We will have live bands, games, food trucks, and much more.',
           images: [
             'https://sun9-13.userapi.com/c834202/v834202094/d51c2/u2gWzyqC-oo.jpg',
             'https://sun9-38.userapi.com/c834202/v834202094/d51b8/0pW9R4Jveqg.jpg',
@@ -136,5 +131,14 @@ export default {
   }
   .description {
     margin-bottom: 30px;
+  }
+  .back-link {
+    font-size: 2rem;
+  }
+  .back-link a {
+    color: brown;
+  }
+  .back-link a:hover {
+    color: black;
   }
 </style>
