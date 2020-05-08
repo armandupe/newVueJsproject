@@ -1,8 +1,6 @@
 <template>
  <div class="events container">
-    <h2 class="subtitle is-3">
-    Check out our past gigs photos
-    </h2>
+    <h2 class="events__gallery subtitle is-3">GALLERY</h2>
     <div class="columns is-multiline">
       <div v-for="event in events" :event="event" :key="event.id" class="column is-one-quarter">
         <router-link :to="'/event/' + event.id">
@@ -60,5 +58,8 @@ export default {
   .events {
     margin-top: 100px;
     text-align: center;
+    &__gallery {
+      color: #fff;
+    }
   }
 </style>

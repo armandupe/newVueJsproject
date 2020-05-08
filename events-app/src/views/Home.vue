@@ -2,29 +2,35 @@
 <div class="home">
   <section class="hero is-dark">
     <div class="hero-body">
-      <div class="container">
-        <!-- <h1 class="title">
-          TORVE        
-        </h1> -->
-        <!-- <div class="button-block">
-          <button class="button is-xl is-dark">Sign Up to Browse Events</button>
-        </div> -->
-      </div>
+      
     </div>
   </section>
+  <section class="home-video">
+    <iframe class="home-video__iframe" width="960" height="640" src="https://www.youtube.com/embed/FMENKm11RTY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="home-video__iframe" width="960" height="640" src="https://www.youtube.com/embed/NW7VP79KBQw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
   <EventsList />
+  <Footer />
 </div>
 </template>
 <script>
 import EventsList from '../components/EventsList';
+import Footer from '../components/Footer';
 export default {
   name: 'home',
   components: {
-    EventsList
+    EventsList,
+    Footer
   }
 }
 </script>
 <style lang="scss" scoped>
+  .home {
+    background-image: url('../assets/tray.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+  }
   .hero {  
     text-align: center;
     background-image: url('../assets/background.jpg');
@@ -63,5 +69,14 @@ export default {
   }
   .is-xl {
     font-size: 1.7rem;
+  }
+  .home-video {
+    padding: 3rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__iframe {
+      padding: 1rem 0 1rem 0;
+    }
   }
 </style>

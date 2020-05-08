@@ -14,9 +14,19 @@ export default new Router({
       component: Home
     },
     {
-      path: '/about',
-      name: 'about',
+      path: '/band',
+      name: 'band',
       component: () => import('../views/About.vue')
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: () => import('../views/Contact.vue')
+    },
+    {
+      path: '/listen',
+      name: 'listen',
+      component: () => import('../views/Listen.vue')
     },
     {
       path: '/event/:id',

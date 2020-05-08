@@ -14,17 +14,28 @@
   <div id="navbar" class="navbar-menu">
     <div class="navbar-start">
       <router-link to="/" class="navbar-item">Home</router-link>
-      <router-link to="/about" class="navbar-item">About</router-link>
+      <router-link to="/listen" class="navbar-item">Listen</router-link>
+      <router-link to="/band" class="navbar-item">Band</router-link>
+      <router-link to="/contact" class="navbar-item">Contact</router-link>
     </div>
-    <div class="navbar-end">
-      <div class=".navbar-end__listen-link">
-        <div class="buttons">
-          <a target="_blank" href="https://torve.bandcamp.com" class="button is-dark">
-            <strong>Listen</strong>
-          </a>
-        </div>
-      </div>
-    </div>
+    <svg class="main-logo" viewBox="0 0 8000 8000"  height="100"  width="100">
+      <path
+      id="path14"
+      style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+      d="M 621.461,8090.51 H 311.176 v -0.88 H 0 V 7779.34 H 311.176 V 0 h 310.285 v 7779.34 h 311.172 v 310.29 H 621.461 v 0.88" /><path
+      id="path16"
+      style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+      d="M 1711.46,311.172 H 1398.51 V 7779.34 h 312.95 z m 0,7778.458 h -312.95 v 0.88 H 1088.22 V 0 h 310.29 v 0.878906 h 312.95 V 0 h 310.28 V 0.878906 311.172 7779.34 v 310.29 0.88 h -310.28 v -0.88" /><path
+      id="path18"
+      style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+      d="M 3889.67,620.352 3576.72,1089.1 V 8090.51 H 3266.44 V 933.52 L 3889.67,0 h 310.29 V 8090.51 H 3889.67 V 620.352" /><path
+      id="path20"
+      style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+      d="m 2800.56,6534.64 h -312.94 v 1244.7 h 312.94 z m 0,1554.99 h -312.94 v 0.88 H 2177.33 V 0 h 310.29 v 6174.36 l 312.94,-728.83 V 0 h 310.29 v 5445.53 0.01 0 l -334.42,778.82 h 24.13 v -0.89 h 310.29 v 0.89 310.28 1244.7 310.29 0.88 h -310.29 v -0.88" /><path
+      id="path22"
+      style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+      d="m 5289.06,7779.34 v 310.29 h -623.23 v 0.88 H 4355.54 V 0 h 310.29 v 0.878906 h 623.23 V 311.172 H 4665.83 V 6224.36 h 623.23 v 310.28 h -623.23 v 1244.7 h 623.23" />
+    </svg>
   </div>
 </nav>
 </template>
@@ -35,17 +46,28 @@ export default {
 </script>
 <style lang="scss" scoped>
   nav {
-    margin-top: 25px;
-    margin-bottom: 30px;
     a {
       font-weight: bold;
-      color: #2c3e50;
+      color: #fff;
+      &:hover {
+        color: brown;
+      }
       &.router-link-exact-active {
         color: #d88d00;
       }
     }
   }
+  .main-logo {
+    transform: rotateX(180deg);
+  }
   .navbar {
+    position: fixed;
+    max-width: 100%;
+    min-width: 100%;
+    background-color: black;
+    &-brand {
+      background-color: black;
+    }
     &-item__instagram {
       margin-left: .5rem;
     }

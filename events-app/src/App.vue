@@ -18,7 +18,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 #app {
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-family: 'Abel', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
