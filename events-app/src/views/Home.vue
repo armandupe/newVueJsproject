@@ -1,9 +1,7 @@
 <template>
 <div class="home">
   <section class="hero is-dark">
-    <div class="hero-body">
-      
-    </div>
+    <div class="hero-body"></div>
   </section>
   <section class="home-video">
     <iframe class="home-video__iframe" width="960" height="640" src="https://www.youtube.com/embed/FMENKm11RTY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

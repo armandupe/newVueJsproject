@@ -25,7 +25,7 @@ export default {
           id: 1,
           previewImg: 'https://sun9-50.userapi.com/c858424/v858424182/190034/z0_Rwy5QqP8.jpg',
           name: 'Moscow',
-          location: 'Бар "УСПЕХ"',
+          location: 'Bar "USPEX"',
           date: '07-03-2020',
         },
         {
@@ -39,7 +39,7 @@ export default {
           id: 3,
           previewImg: 'https://sun9-62.userapi.com/c846419/v846419278/7dbd/qyTUWvmL-jY.jpg',
           name: 'Saratov',
-          location: 'Бар Искра',
+          location: 'Bar "Iskra"',
           date: '08-03-2018',
         },
         {

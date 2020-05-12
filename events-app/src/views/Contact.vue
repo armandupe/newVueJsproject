@@ -1,15 +1,19 @@
 <template>
 <div class="contact">
-    <form class="contact-form">
+    <form action="send" method="post" class="contact-form">
     <ul class="contact-form__form-style">
-        <li><label>Full Name <span class="contact-form__required">*</span></label><input type="text" name="field1" class="contact-form__field-divided" placeholder="First" required/> <input type="text" name="field2" class="contact-form__field-divided" placeholder="Last" required/></li>
+        <li>
+            <label>Full Name <span class="contact-form__required">*</span></label>
+            <input type="text" name="firstName" class="contact-form__field-divided" placeholder="First" required/>
+            <input type="text" name="lastName" class="contact-form__field-divided" placeholder="Last" required/>
+        </li>
         <li>
             <label>Email <span class="contact-form__required">*</span></label>
-            <input type="email" name="field3" class="contact-form__field-long" required/>
+            <input type="email" name="email" class="contact-form__field-long" required/>
         </li>
         <li>
             <label>Subject <span class="contact-form__required">*</span></label>
-            <select name="field4" class="contact-form__field-select">
+            <select name="subject" class="contact-form__field-select">
             <option value="Advertise">Advertise</option>
             <option value="Partnership">Partnership</option>
             <option value="General Question">General</option>
@@ -17,7 +21,7 @@
         </li>
         <li>
             <label>Your Message <span class="contact-form__required">*</span></label>
-            <textarea name="field5" id="field5" class="contact-form__field-long contact-form__field-textarea" required></textarea>
+            <textarea name="message" id="field5" class="contact-form__field-long contact-form__field-textarea" required></textarea>
         </li>
         <li>
             <input class="contact-form__submit" type="submit" value="Submit" />

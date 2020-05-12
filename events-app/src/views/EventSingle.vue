@@ -15,10 +15,10 @@
     </section>
     <section class="event-content">
       <div class="container">
-        <p class="back-link"><router-link :to="'/'">←</router-link></p>
+        <p class="back-link"><router-link :to="'/'">← Home</router-link></p>
         <div class="event-images columns is-multiline has-text-centered">
           <div v-for="image in event.images" :key="image.id" class="event-images__img-container column is-one-third">
-            <img class="event-images__img" :src="buildImgSrc(image)" :alt="event.name">
+            <a data-fancybox="gallery" :href="buildImgSrc(image)"><img class="event-images__img" :src="buildImgSrc(image)" :alt="event.name"></a>
           </div>
         </div>
       </div>
@@ -79,6 +79,7 @@ export default {
     }
   }
 }
+$.fancybox.defaults.loop = "true";
 </script>
 <style lang="scss" scoped>
   .event-single {
