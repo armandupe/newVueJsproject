@@ -10,7 +10,6 @@
     <div class="container">
       <p class="about__description is-size-4">Formed in 2014 in city of Penza</p>
       <p class="about__description is-size-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis iusto nesciunt dolores dignissimos delectus cumque. Sit ipsa, eius reiciendis culpa voluptatem dicta eos temporibus ut natus explicabo facilis adipisci fugit!</p>
-      <p class="about__description is-size-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, vitae corporis eligendi in non doloribus nesciunt modi illum, beatae saepe accusantium amet sequi quibusdam! Repellendus eos impedit tempora ut officiis?</p>
       <img src="../assets/band.jpg" alt="band">
     </div>
     <Footer />
@@ -31,10 +30,16 @@ export default {
     background-image: url('../assets/tray.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
+    @media (max-width: 1023px) {
+      padding-top: 3rem;
+    } 
     &__description {
       color: #fff;
-      padding: 2rem 0 2rem 0;
+      padding: 1rem 0 2rem 0;
+      @media (max-width: 1023px) {
+        padding: 1rem .5rem 2rem .5rem;
+      }
     }
   }
   .hero.is-primary {

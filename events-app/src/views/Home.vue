@@ -4,8 +4,8 @@
     <div class="hero-body"></div>
   </section>
   <section class="home-video">
-    <iframe class="home-video__iframe" width="960" height="640" src="https://www.youtube.com/embed/FMENKm11RTY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe class="home-video__iframe" width="960" height="640" src="https://www.youtube.com/embed/NW7VP79KBQw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="home-video__iframe" width="" height="" src="https://www.youtube.com/embed/FMENKm11RTY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="home-video__iframe" width="" height="" src="https://www.youtube.com/embed/NW7VP79KBQw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </section>
   <EventsList />
   <Footer />
@@ -75,6 +75,16 @@ export default {
     align-items: center;
     &__iframe {
       padding: 1rem 0 1rem 0;
+      min-width: 960px;
+      min-height: 640px;
+      @media (max-width: 992px) {
+        width: 100%;
+        min-width: auto;
+        min-height: 640px;
+      }
+      @media (max-width: 480px) {
+        min-height: auto;
+      }
     }
   }
 </style>

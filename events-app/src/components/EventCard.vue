@@ -1,11 +1,11 @@
 <template>
  <div class="event-card">
     <div class="card">
-      <img class="card__img" :src="event.previewImg" :alt="event.name">
+      <img class="card__img" :src="buildImgSrc(event.previewImg)" :alt="event.name">
       <div class="card-content">
-        <h2 class="is-size-4 has-text-weight-bold">{{ event.name }}</h2>
+        <h2 class="card-content__name is-size-4 has-text-weight-bold">{{ event.name }}</h2>
         <small class="event-date">{{ event.date }}</small>
-        <span>{{ event.location }}</span>
+        <span class="card-content__location">{{ event.location }}</span>
       </div>
     </div>
   </div>
@@ -14,7 +14,12 @@
 export default {
   props: [
     'event'
-  ]
+  ],
+  methods: {
+    buildImgSrc(previewImg) {
+      return require(`../assets/events/${previewImg}.jpg`);
+    }
+  }
 }
 </script>
 <style lang="scss" scoped>
@@ -46,7 +51,7 @@ export default {
     padding: 10px;
     height: 400px;
     width: 100%;
-    span {
+    &__name {
       font-size: 18px;
       text-align: center;
       width: 100%;
@@ -54,7 +59,7 @@ export default {
       bottom: 10px;
       right: 0;
     }
-    h2 {
+    &__location {
       margin-top: 10px;
     }
   }

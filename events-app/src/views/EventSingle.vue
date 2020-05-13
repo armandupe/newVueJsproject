@@ -102,6 +102,10 @@ $.fancybox.defaults.loop = "true";
         max-width: 340px;
         max-height: 340px;
         overflow-y: hidden;
+        @media (max-width: 768px) {
+          max-width: inherit;
+          max-height: inherit;
+        }
     }
     &__img {
         min-height: 340px;
