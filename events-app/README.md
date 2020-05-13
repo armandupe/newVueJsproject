@@ -1,4 +1,4 @@
-# events-app
+# torveband
 
 ## Project setup
 ```
