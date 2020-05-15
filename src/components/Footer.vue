@@ -103,6 +103,7 @@ export default {
 </script>
 <style lang="scss">
 .hero-body.footer {
+    flex: 0 0 auto;
     margin-top: 5rem;
     background-color: black;
     padding: 2.5rem 1.5rem 2.5rem;
